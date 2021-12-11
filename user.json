@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": "f4qdl",
+      "firstname": "Pankaj",
+      "lastname": "Thankur",
+      "email": "Pankaj@gmail.com",
+      "phone": "12345353",
+      "active": true,
+      "password": "Pankja"
+    },
+    {
+      "id": "wchgm",
+      "firstname": "lkgjfdxcvxcv",
+      "lastname": "fddfcc",
+      "email": "dtrd",
+      "phone": "drtdf",
+      "active": true,
+      "password": "gfdsa"
+    },
+    {
+      "id": "kxpyc",
+      "firstname": "Lavish",
+      "lastname": "Verma",
+      "email": "nkjsah",
+      "phone": "12121212121",
+      "active": true,
+      "password": "jfawfwau"
+    },
+    {
+      "id": "x3q6w",
+      "firstname": "Farhan",
+      "lastname": "Asad",
+      "email": "Farhan@gmail.com",
+      "phone": "767676767676",
+      "active": false,
+      "password": ""
+    },
+    {
+      "id": "q0z8e",
+      "firstname": "hu",
+      "lastname": "hu",
+      "email": "iu",
+      "phone": "h",
+      "active": true,
+      "password": "hyyi"
+    },
+    {
+      "id": "9zcah",
+      "firstname": "uiuh",
+      "lastname": "iuhiu",
+      "email": "ihh",
+      "phone": "hiu",
+      "active": true,
+      "password": "hii"
+    }
+  ]
+}

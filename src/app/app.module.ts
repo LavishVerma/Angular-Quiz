@@ -14,7 +14,9 @@ import { LoginComponent } from './components/login/login.component';
 import {MatTableModule} from '@angular/material/table';
 import { ManageUserComponent } from './components/manage-user/manage-user.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import { AddUserComponent } from './components/dialog/add-user/add-user.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,9 @@ import { AddUserComponent } from './components/dialog/add-user/add-user.componen
     MatInputModule,
     ReactiveFormsModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCheckboxModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

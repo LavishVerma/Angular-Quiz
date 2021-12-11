@@ -1,1 +1,55 @@
-<p>add-user works!</p>
+<div>
+    <h2>Add new User</h2>
+<form [formGroup]="userform" (ngSubmit)="OnSubmit()" autocomplete="off" >
+    <div fxLayout="row" >  
+    
+        <mat-form-field fxFlex="600" appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstname">
+          </mat-form-field>
+  </div>
+  <div fxLayout="row" >  
+    
+    <mat-form-field fxFlex="600" appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastname">
+      </mat-form-field>
+</div>
+<div fxLayout="row" >  
+    
+    <mat-form-field fxFlex="600" appearance="fill">
+        <mat-label>Mobile</mat-label>
+        <input matInput  formControlName="phone">
+      </mat-form-field>
+</div>
+    <div fxLayout="row" >  
+    
+    <mat-form-field fxFlex="600" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput  formControlName="email">
+      </mat-form-field>
+   </div>
+   <div fxLayout="row" >  
+        <mat-checkbox  formControlName="active">Active</mat-checkbox>
+      
+   </div>
+   <div fxLayout="row" >  
+    
+    <mat-form-field fxFlex="600" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+</div>
+
+
+
+<div fxLayout="row" mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit"  [mat-dialog-close]="true">Add</button>
+
+
+</div>  
+
+ 
+
+</form>
+</div>
