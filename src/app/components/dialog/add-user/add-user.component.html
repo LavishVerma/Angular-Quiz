@@ -1,5 +1,5 @@
 <div>
-    <h2>Add new User</h2>
+    <h2> {{isEditMode ? "Edit User" : "Add new User" }}</h2>
 <form [formGroup]="userform" (ngSubmit)="OnSubmit()" autocomplete="off" >
     <div fxLayout="row" >  
     
@@ -44,7 +44,7 @@
 
 
 <div fxLayout="row" mat-dialog-actions>
-    <button mat-raised-button color="primary" type="submit"  [mat-dialog-close]="true">Add</button>
+    <button mat-raised-button color="primary" type="submit"  [mat-dialog-close]="true"> {{isEditMode ? "Edit" : "Add" }}</button>
 
 
 </div>  

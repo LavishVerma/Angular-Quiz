@@ -1,24 +1,6 @@
 {
   "users": [
     {
-      "id": "f4qdl",
-      "firstname": "Pankaj",
-      "lastname": "Thankur",
-      "email": "Pankaj@gmail.com",
-      "phone": "12345353",
-      "active": true,
-      "password": "Pankja"
-    },
-    {
-      "id": "wchgm",
-      "firstname": "lkgjfdxcvxcv",
-      "lastname": "fddfcc",
-      "email": "dtrd",
-      "phone": "drtdf",
-      "active": true,
-      "password": "gfdsa"
-    },
-    {
       "id": "kxpyc",
       "firstname": "Lavish",
       "lastname": "Verma",
@@ -28,31 +10,31 @@
       "password": "jfawfwau"
     },
     {
-      "id": "x3q6w",
-      "firstname": "Farhan",
+      "id": "p8bm9",
+      "firstname": "PK",
+      "lastname": "PK",
+      "email": "pK",
+      "phone": "Pk",
+      "active": true,
+      "password": "lafhifhai"
+    },
+    {
+      "id": "k69xw",
+      "firstname": "Farhan chacha",
       "lastname": "Asad",
-      "email": "Farhan@gmail.com",
-      "phone": "767676767676",
+      "email": "farhan@gmail.com",
+      "phone": "1111111111",
+      "active": true,
+      "password": "Chacha"
+    },
+    {
+      "id": "ke8jz",
+      "firstname": "Ayush",
+      "lastname": "Srivastav",
+      "email": "bsbcydsgcs",
+      "phone": "78787878787",
       "active": false,
-      "password": ""
-    },
-    {
-      "id": "q0z8e",
-      "firstname": "hu",
-      "lastname": "hu",
-      "email": "iu",
-      "phone": "h",
-      "active": true,
-      "password": "hyyi"
-    },
-    {
-      "id": "9zcah",
-      "firstname": "uiuh",
-      "lastname": "iuhiu",
-      "email": "ihh",
-      "phone": "hiu",
-      "active": true,
-      "password": "hii"
+      "password": "gfysgygdshdfgesgeyfef7w"
     }
   ]
 }

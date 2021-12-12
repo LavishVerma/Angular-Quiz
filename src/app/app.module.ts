@@ -17,13 +17,16 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { AddUserComponent } from './components/dialog/add-user/add-user.component';
 import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
+import { DeleteUserComponent } from './components/dialog/delete-user/delete-user.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
     ManageUserComponent,
-    AddUserComponent
+    AddUserComponent,
+    DeleteUserComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatDialogModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

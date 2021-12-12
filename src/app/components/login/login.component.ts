@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
 import { loginModel } from 'src/app/model/login.model';
 
 @Component({
@@ -9,7 +11,7 @@ import { loginModel } from 'src/app/model/login.model';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder,private route :Router) { }
   loginform!: FormGroup;
   data !: loginModel;
 
@@ -30,8 +32,8 @@ export class LoginComponent implements OnInit {
 
   if(this.data.username == "admin" && this.data.password == "admin"){
     //Redirects to ADMIN portal 
-    console.log('Admin portal');
     
+    this.route.navigate(['/manage-users']);
   }
     console.log("Data-->",this.data);
    
