@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 import { user } from 'src/app/model/user.model';
 import { UserService } from 'src/app/service/user.service';
@@ -13,18 +14,26 @@ import { DeleteUserComponent } from '../dialog/delete-user/delete-user.component
 })
 export class ManageUserComponent implements OnInit {
 
-  constructor(public dialog: MatDialog,private userService:UserService) { } 
+  constructor(public dialog: MatDialog,private userService:UserService) {
+    this.dataSource = new MatTableDataSource<user>();
+   } 
   displayedColumns: string[] = ['id', 'firstname', 'lastname', 'email','phone','active','password','actions'];
   
-  dataSource!: user[];
+  dataSource: MatTableDataSource<user>;
   userData!: user;
+
 
   ngOnInit(): void {
     this.userService.getAllUsers().subscribe((res:any)=>{
-    this.dataSource = res;
+    this.dataSource.data = res;
     });
   }
   
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
   onAddUser(){
     const dialogRef = this.dialog.open(AddUserComponent,{
       width : "50%",

@@ -1,5 +1,8 @@
-<button style="margin-top:100px;" (click)="onAddUser()" mat-raised-button color="warn">Add User</button>
-
+<button style="margin-top:100px;" (click)="onAddUser()" mat-raised-button color="warn">Add User</button><br>
+<mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+  </mat-form-field>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
